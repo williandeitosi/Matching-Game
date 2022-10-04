@@ -12,7 +12,7 @@ function BoardGame(amountCards) {
     $arrowDown.setAttribute("data-currentplayer", currentplayer == 1 ? 2 : 1);
   };
 
-  window.boardGame = {};
+  window.boardGame = { };
   window.boardGame.handleClick = () => {
     const $boardGame = document.querySelector(".board_game");
     const $arrowDown = document.querySelector(".arrow_down");
