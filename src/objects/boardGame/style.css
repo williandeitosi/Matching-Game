@@ -1,0 +1,10 @@
+.board_game {
+    /* background-color: var(--color-backGaming); */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+}

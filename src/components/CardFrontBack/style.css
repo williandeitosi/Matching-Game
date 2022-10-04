@@ -1,0 +1,30 @@
+.card_front_back {
+    --width: 130px;
+    --height: 160px;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.42, 0, 0.54, 1.68);
+    cursor: pointer;
+}
+
+.active {
+    transform: rotateY(180deg);
+}
+
+.card_front_back > .front, .card_front_back > .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+
+}
+
+.card_front_back > .back .card-game {
+    background-color: var(--color-backgroundCard);
+}
+
+    

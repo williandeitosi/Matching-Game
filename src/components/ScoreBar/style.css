@@ -1,0 +1,31 @@
+.score_bar{
+    display: flex;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.score_bar[data-points="1"] > .box:first-child {
+    background-color: var(--color-points);
+
+}
+
+.score_bar[data-points="2"] {
+    flex-direction: row-reverse;
+
+}
+
+.score_bar[data-points="2"] > .box:nth-child(n+2) {
+    background-color: var(--color-points);
+
+}
+
+.score_bar[data-points="3"] > .box {
+    background-color: var(--color-points);
+
+}
